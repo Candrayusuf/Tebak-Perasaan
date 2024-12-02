@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aku Bisa Menebak Perasaanmu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Pesan awal -->
+        <div id="message-container" class="card">
+            <p id="message">Aku bisa menebak perasaanmu.</p>
+            <button id="next-button" class="hidden">Klik untuk menebak</button>
+        </div>
+
+        <!-- Pilihan untuk menebak -->
+        <div id="guess-container" class="card hidden">
+            <p>Mau aku tebak?</p>
+            <button id="yes-button">Ya, aku mau</button>
+            <button id="no-button">Tidak, lain kali saja</button>
+        </div>
+
+        <!-- Hasil tebakan -->
+        <div id="result-container" class="card hidden">
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <!-- Elemen audio untuk memainkan BGM -->
+    <audio id="senang-audio" src="audio/senang.mp3" preload="auto"></audio>
+    <audio id="sedih-audio" src="audio/sedih.mp3" preload="auto"></audio>
+
+    <!-- Footer dengan teks "Coded by : Yusuf" -->
+    <footer>
+        <p>Coded by : Yusuf</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

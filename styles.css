@@ -1,0 +1,84 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/background.png'); /* Ganti dengan nama dan path gambar kamu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #f0f0f0;
+}
+
+#container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    z-index: 1; /* Membuat konten utama berada di atas footer */
+}
+
+.card {
+    background-color: rgba(33, 33, 33, 0.9); /* Gelap dengan transparansi */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Bayangan lebih gelap */
+}
+
+button {
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
+}
+
+#result-container p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+/* Footer Styling */
+footer {
+    position: absolute; /* Posisi absolute untuk menempatkan footer di bawah */
+    bottom: 10px; /* Memberikan jarak dari bawah */
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #f0f0f0;
+    z-index: 0; /* Pastikan footer berada di bawah konten utama */
+}
+
+footer p {
+    margin: 0;
+    font-style: italic; /* Memberikan efek italic untuk teks */
+}
